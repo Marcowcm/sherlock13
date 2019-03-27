@@ -1,0 +1,18 @@
+tr img{
+	height:4vw; 
+}
+.iconbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input{
+	text-align: center;
+}
+
+.iconbox img{
+	height: 2vw;
+	margin-left: 3px;
+	margin-right: 3px;
+}
