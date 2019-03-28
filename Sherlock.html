@@ -7,304 +7,331 @@
 
   <link rel="stylesheet" href="./static/css/Sherlock.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./static/js/Sherlock.js"></script>
+  
+
     <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
 </head>
 <body>
-  <h3>Sherlock 13</h3>
-  <table class="centered striped" id="gametable" style="width:100%">
-    <thead>
-        <tr>
-          <th><h5><b>Player</b></h5></th>
-          <th><img src="./static/image/detective.png" alt="detective"><h6>5</h6></th> 
-          <th><img src="./static/image/intelligance.png" alt="intelligance"><h6>5</h6></th>
-          <th><img src="./static/image/fighter.png" alt="fighter"><h6>5</h6></th> 
-          <th><img src="./static/image/police.png" alt="police"><h6>5</h6></th>
-          <th><img src="./static/image/book.svg" alt="book"><h6>4</h6></th>
-          <th><img src="./static/image/lady.png" alt="lady"><h6>3</h6></th>
-          <th><img src="./static/image/observant.png" alt="observant"><h6>3</h6></th>
-          <th><img src="./static/image/criminal.png" alt="criminal"><h6>3</h6></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="player1">
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-        </tr>
-        <tr id="player2">
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-        </tr>
-          <tr id="player3">
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-        </tr>
-          <tr id="player4">
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-          <td><input type="text"></td>
-        </tr>
-        
-      </tbody>
-</table>
-<div class="row" id="Checklist">
-  <form action="#">
-    <!-- Left Column of 7 characters   -->
-    <div class="col s6" id="left-column">
-      <div class="row" id="sebastain">
-        <div class="col s5 iconbox">
-          <img src="./static/image/criminal.png" alt="criminal">
-          <img src="./static/image/fighter.png" alt="fighter">
-        </div>
-        <div class="col s5">
-          <h6>Sebastian Moran</h6>
-        </div>
-        <div class="col s2">
-         <label>
-          <input type="checkbox" />
-          <span></span>
-        </label>
-        </div>
-      </div>
+  <div class="container" id="scoringsheet" style="width:100%">
+    <div class="row">
+      <h3>Sherlock 13</h3>
+    </div>
+    <form action="" id="playsheet">
+    <table class="centered striped" id="gametable" style="width:100%">
+      <thead>
+          <tr>
+            <th><h5><b>Player</b></h5></th>
+            <th><img src="./static/image/detective.png" alt="detective"><h6>5</h6></th> 
+            <th><img src="./static/image/intelligance.png" alt="intelligance"><h6>5</h6></th>
+            <th><img src="./static/image/fighter.png" alt="fighter"><h6>5</h6></th> 
+            <th><img src="./static/image/police.png" alt="police"><h6>5</h6></th>
+            <th><img src="./static/image/book.svg" alt="book"><h6>4</h6></th>
+            <th><img src="./static/image/lady.png" alt="lady"><h6>3</h6></th>
+            <th><img src="./static/image/observant.png" alt="observant"><h6>3</h6></th>
+            <th><img src="./static/image/criminal.png" alt="criminal"><h6>3</h6></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="player1">
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr id="player2">
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+            <tr id="player3">
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+            <tr id="player4">
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          
+        </tbody>
+    </table>
+
+    <div class="row" id="Checklist">
       
-      <div class="row" id="irene">
-        <div class="col s5 iconbox">
-          <img src="./static/image/criminal.png" alt="criminal">
-          <img src="./static/image/intelligance.png" alt="intelligance">
-          <img src="./static/image/lady.png" alt="lady">
-        </div>
-        <div class="col s5">
-          <h6>Irene Adler</h6>
-        </div>
-        <div class="col s2">
-          <label>
-            <input type="checkbox" />
+      <!-- Left Column of 7 characters   -->
+        <div class="col s6" id="left-column">
+        <div class="row" id="sebastain">
+          <div class="col s5 iconbox">
+            <img src="./static/image/criminal.png" alt="criminal">
+            <img src="./static/image/fighter.png" alt="fighter">
+          </div>
+          <div class="col s5">
+            <h6>Sebastian Moran</h6>
+          </div>
+          <div class="col s2">
+           <label>
+            <input type="checkbox" class="filled-in black" />
             <span></span>
           </label>
+          </div>
         </div>
-      </div>
+        
+        <div class="row" id="irene">
+          <div class="col s5 iconbox">
+            <img src="./static/image/criminal.png" alt="criminal">
+            <img src="./static/image/intelligance.png" alt="intelligance">
+            <img src="./static/image/lady.png" alt="lady">
+          </div>
+          <div class="col s5">
+            <h6>Irene Adler</h6>
+          </div>
+          <div class="col s2">
+            <label>
+              <input type="checkbox" class="filled-in black" />
+              <span></span>
+            </label>
+          </div>
+        </div>
 
-      <div class="row" id="lestrade">
-        <div class="col s5 iconbox">
-          <img src="./static/image/police.png" alt="police">
-          <img src="./static/image/observant.png" alt="observant">
-          <img src="./static/image/book.svg" alt="book">
+        <div class="row" id="lestrade">
+          <div class="col s5 iconbox">
+            <img src="./static/image/police.png" alt="police">
+            <img src="./static/image/observant.png" alt="observant">
+            <img src="./static/image/book.svg" alt="book">
+          </div>
+          <div class="col s5">
+            <h6>Inspector G. Lestrade</h6>
+          </div>
+          <div class="col s2">
+            <label>
+            <input type="checkbox" class="filled-in black" />
+            <span></span>
+            </label>
+          </div>
         </div>
-        <div class="col s5">
-          <h6>Inspector G. Lestrade</h6>
-        </div>
-        <div class="col s2">
-          <label>
-          <input type="checkbox" />
-          <span></span>
-          </label>
-        </div>
-      </div>
 
-      <div class="row" id="gregson">
-        <div class="col s5 iconbox">
-          <img src="./static/image/police.png" alt="police">
-          <img src="./static/image/fighter.png" alt="fighter">
-          <img src="./static/image/book.svg" alt="book">
+        <div class="row" id="gregson">
+          <div class="col s5 iconbox">
+            <img src="./static/image/police.png" alt="police">
+            <img src="./static/image/fighter.png" alt="fighter">
+            <img src="./static/image/book.svg" alt="book">
+          </div>
+          <div class="col s5">
+            <h6>Inspector Gregson</h6>
+          </div>
+          <div class="col s2">
+            <label>
+            <input type="checkbox" class="filled-in black" />
+            <span></span>
+            </label>
+          </div>
         </div>
-        <div class="col s5">
-          <h6>Inspector Gregson</h6>
-        </div>
-        <div class="col s2">
-          <label>
-          <input type="checkbox" />
-          <span></span>
-          </label>
-        </div>
-      </div>
 
-        <div class="row" id="Baynes">
-        <div class="col s5 iconbox">
-          <img src="./static/image/police.png" alt="police">
-          <img src="./static/image/intelligance.png" alt="intelligance">
+          <div class="row" id="Baynes">
+          <div class="col s5 iconbox">
+            <img src="./static/image/police.png" alt="police">
+            <img src="./static/image/intelligance.png" alt="intelligance">
+          </div>
+          <div class="col s5">
+            <h6>Inspector Baynes</h6>
+          </div>
+          <div class="col s2">
+            <label>
+            <input type="checkbox" class="filled-in black" />
+            <span></span>
+            </label>
+          </div>
         </div>
-        <div class="col s5">
-          <h6>Inspector Baynes</h6>
+
+        <div class="row" id="bradstreet">
+          <div class="col s5 iconbox">
+            <img src="./static/image/police.png" alt="police">
+            <img src="./static/image/fighter.png" alt="fighter">
+          </div>
+          <div class="col s5">
+            <h6>Inspector Bradstreet</h6>
+          </div>
+          <div class="col s2">
+            <label>
+            <input type="checkbox" class="filled-in black" />
+            <span></span>
+            </label>
+          </div>
         </div>
-        <div class="col s2">
-          <label>
-          <input type="checkbox" />
-          <span></span>
-          </label>
+
+        <div class="row" id="hopkins">
+          <div class="col s5 iconbox">
+            <img src="./static/image/police.png" alt="police">
+            <img src="./static/image/detective.png" alt="detective">
+            <img src="./static/image/observant.png" alt="observant">
+          </div>
+          <div class="col s5">
+            <h6>Inspector Hopkins</h6>
+          </div>
+          <div class="col s2">
+            <label>
+            <input type="checkbox" class="filled-in black" />
+            <span></span>
+            </label>
+          </div>
         </div>
-      </div>
 
-      <div class="row" id="bradstreet">
-        <div class="col s5 iconbox">
-          <img src="./static/image/police.png" alt="police">
-          <img src="./static/image/fighter.png" alt="fighter">
         </div>
-        <div class="col s5">
-          <h6>Inspector Bradstreet</h6>
+      <!-- Right Column of 6 characters  -->
+        <div class="col s6" id="right-column">
+
+      
+          <div class="row" id="sherlock">
+            <div class="col s5 iconbox">
+              <img src="./static/image/detective.png" alt="detective">
+              <img src="./static/image/intelligance.png" alt="intelligance">
+              <img src="./static/image/fighter.png" alt="fighter">
+            </div>
+            <div class="col s5">
+              <h6>Sherlock Holmes</h6>
+            </div>
+            <div class="col s2">
+             <label>
+              <input type="checkbox" class="filled-in black" />
+              <span></span>
+            </label>
+            </div>
+          </div>
+        
+          <div class="row" id="watson">
+            <div class="col s5 iconbox">
+              <img src="./static/image/detective.png" alt="detective">
+              <img src="./static/image/observant.png" alt="observant">
+              <img src="./static/image/fighter.png" alt="fighter">
+            </div>
+            <div class="col s5">
+              <h6>John Watson</h6>
+            </div>
+            <div class="col s2">
+              <label>
+                <input type="checkbox" class="filled-in black" />
+                <span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="row" id="mycroft">
+            <div class="col s5 iconbox">
+              <img src="./static/image/detective.png" alt="detective">
+              <img src="./static/image/observant.png" alt="observant">
+              <img src="./static/image/book.svg" alt="book">
+            </div>
+            <div class="col s5">
+              <h6>Mycroft Holmes</h6>
+            </div>
+            <div class="col s2">
+              <label>
+              <input type="checkbox" class="filled-in black" />
+              <span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="row" id="hudson">
+            <div class="col s5 iconbox">
+              <img src="./static/image/detective.png" alt="detective">
+              <img src="./static/image/lady.png" alt="lady">
+            </div>
+            <div class="col s5">
+              <h6>Mrs. Hudson</h6>
+            </div>
+            <div class="col s2">
+              <label>
+              <input type="checkbox" class="filled-in black" />
+              <span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="row" id="mary">
+            <div class="col s5 iconbox">
+              <img src="./static/image/book.svg" alt="book">
+              <img src="./static/image/lady.png" alt="lady">
+            </div>
+            <div class="col s5">
+              <h6>Mary Morstan</h6>
+            </div>
+            <div class="col s2">
+              <label>
+              <input type="checkbox" class="filled-in black" />
+              <span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="row" id="moriarty">
+            <div class="col s5 iconbox">
+              <img src="./static/image/criminal.png" alt="criminal">
+              <img src="./static/image/intelligance.png" alt="intelligance">
+            </div>
+            <div class="col s5">
+              <h6>James Moriarty</h6>
+            </div>
+            <div class="col s2">
+              <label>
+              <input type="checkbox" class="filled-in black" />
+              <span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="container" id="thankyou">
+            <a class="waves-effect waves-light btn view grey darken-2" onclick="$('#modal1').modal('open');">Reset Sheet</a>
+            
+       
+
+          </div>
+
         </div>
-        <div class="col s2">
-          <label>
-          <input type="checkbox" />
-          <span></span>
-          </label>
-        </div>
+      
       </div>
-
-      <div class="row" id="hopkins">
-        <div class="col s5 iconbox">
-          <img src="./static/image/police.png" alt="police">
-          <img src="./static/image/detective.png" alt="detective">
-          <img src="./static/image/observant.png" alt="observant">
-        </div>
-        <div class="col s5">
-          <h6>Inspector Hopkins</h6>
-        </div>
-        <div class="col s2">
-          <label>
-          <input type="checkbox" />
-          <span></span>
-          </label>
-        </div>
-      </div>
-
-    </div>
-    <!-- Right Column of 6 characters  -->
-    <div class="col s6" id="right-column">
-
-    
-    <div class="row" id="sherlock">
-      <div class="col s5 iconbox">
-        <img src="./static/image/detective.png" alt="detective">
-        <img src="./static/image/intelligance.png" alt="intelligance">
-        <img src="./static/image/fighter.png" alt="fighter">
-      </div>
-      <div class="col s5">
-        <h6>Sherlock Holmes</h6>
-      </div>
-      <div class="col s2">
-       <label>
-        <input type="checkbox" />
-        <span></span>
-      </label>
-      </div>
-    </div>
-    
-    <div class="row" id="watson">
-      <div class="col s5 iconbox">
-        <img src="./static/image/detective.png" alt="detective">
-        <img src="./static/image/observant.png" alt="observant">
-        <img src="./static/image/fighter.png" alt="fighter">
-      </div>
-      <div class="col s5">
-        <h6>John Watson</h6>
-      </div>
-      <div class="col s2">
-        <label>
-          <input type="checkbox" />
-          <span></span>
-        </label>
-      </div>
-    </div>
-
-    <div class="row" id="mycroft">
-      <div class="col s5 iconbox">
-        <img src="./static/image/detective.png" alt="detective">
-        <img src="./static/image/observant.png" alt="observant">
-        <img src="./static/image/book.svg" alt="book">
-      </div>
-      <div class="col s5">
-        <h6>Mycroft Holmes</h6>
-      </div>
-      <div class="col s2">
-        <label>
-        <input type="checkbox" />
-        <span></span>
-        </label>
-      </div>
-    </div>
-
-    <div class="row" id="hudson">
-      <div class="col s5 iconbox">
-        <img src="./static/image/detective.png" alt="detective">
-        <img src="./static/image/lady.png" alt="lady">
-      </div>
-      <div class="col s5">
-        <h6>Mrs. Hudson</h6>
-      </div>
-      <div class="col s2">
-        <label>
-        <input type="checkbox" />
-        <span></span>
-        </label>
-      </div>
-    </div>
-
-      <div class="row" id="mary">
-      <div class="col s5 iconbox">
-        <img src="./static/image/book.svg" alt="book">
-        <img src="./static/image/lady.png" alt="lady">
-      </div>
-      <div class="col s5">
-        <h6>Mary Morstan</h6>
-      </div>
-      <div class="col s2">
-        <label>
-        <input type="checkbox" />
-        <span></span>
-        </label>
-      </div>
-    </div>
-
-    <div class="row" id="moriarty">
-      <div class="col s5 iconbox">
-        <img src="./static/image/criminal.png" alt="criminal">
-        <img src="./static/image/intelligance.png" alt="intelligance">
-      </div>
-      <div class="col s5">
-        <h6>James Moriarty</h6>
-      </div>
-      <div class="col s2">
-        <label>
-        <input type="checkbox" />
-        <span></span>
-        </label>
-      </div>
-    </div>
-
-    <div class="row" id="thankyou">
-      <h5 class="right">Thankyou for using my site. </h5>
-    </div>
-
-    </div>
     </form>
   </div>
+   <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Reset Sheet</h4>
+              <p>Are you sure?</p>
+            </div>
+            <div class="modal-footer">
+              <button id="confirm" class=" modal-action modal-close waves-effect waves-blue btn-flat" onclick="$('#playsheet').trigger('reset'); ">Confirm</button>
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+            </div>
+          </div>
+  
+
 </body>
 </html>

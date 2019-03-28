@@ -1,3 +1,14 @@
+body{
+	background-image: url(../image/London.jpg );
+	background-repeat: no-repeat;
+  	background-size: cover;
+	font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+}
+
+#scoringsheet{
+	background-color: #FFFFFF99 
+}
+
 tr img{
 	height:4vw; 
 }
