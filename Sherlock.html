@@ -56,7 +56,7 @@
         </thead>
         <tbody>
           <tr id="player1">
-            <td><input type="text"></td>
+            <td><input id="player1name" type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
@@ -67,7 +67,7 @@
             <td><input type="text"></td>
           </tr>
           <tr id="player2">
-            <td><input type="text"></td>
+            <td><input id="player2name" type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
@@ -78,7 +78,7 @@
             <td><input type="text"></td>
           </tr>
             <tr id="player3">
-            <td><input type="text"></td>
+            <td><input id="player3name" type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
@@ -89,7 +89,7 @@
             <td><input type="text"></td>
           </tr>
             <tr id="player4">
-            <td><input type="text"></td>
+            <td><input id="player4name" type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
             <td><input type="text"></td>
@@ -329,7 +329,7 @@
 
           <div class="container" id="thankyou">
             <a class="waves-effect waves-light btn view grey darken-2" onclick="$('#modal1').modal('open');">Reset Sheet</a>
-            
+            <a class="waves-effect waves-light btn view grey darken-2" onclick="$('#modal2').modal('open');">Next Round</a>
        
 
           </div>
@@ -346,11 +346,20 @@
               <p>Are you sure?</p>
             </div>
             <div class="modal-footer">
-              <button id="confirm" class=" modal-action modal-close waves-effect waves-blue btn-flat" onclick="$('#playsheet').trigger('reset'); ">Confirm</button>
+              <button id="confirm_reset" class=" modal-action modal-close waves-effect waves-blue btn-flat" onclick="$('#playsheet').trigger('reset'); ">Confirm</button>
               <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Close</a>
             </div>
           </div>
   
-
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <h4>New Round</h4>
+              <p>Player will preserve</p>
+            </div>
+            <div class="modal-footer">
+              <button id="confirm_next" class=" modal-action modal-close waves-effect waves-blue btn-flat" onclick="NextRound()">Confirm</button>
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+            </div>
+          </div>
 </body>
 </html>
