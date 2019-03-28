@@ -44,60 +44,60 @@
       <thead>
           <tr>
             <th><h5><b>Player</b></h5></th>
-            <th><img src="./static/image/detective.png" alt="detective"><h6>5</h6></th> 
-            <th><img src="./static/image/intelligance.png" alt="intelligance"><h6>5</h6></th>
-            <th><img src="./static/image/fighter.png" alt="fighter"><h6>5</h6></th> 
-            <th><img src="./static/image/police.png" alt="police"><h6>5</h6></th>
-            <th><img src="./static/image/book.svg" alt="book"><h6>4</h6></th>
-            <th><img src="./static/image/lady.png" alt="lady"><h6>3</h6></th>
-            <th><img src="./static/image/observant.png" alt="observant"><h6>3</h6></th>
-            <th><img src="./static/image/criminal.png" alt="criminal"><h6>3</h6></th>
+            <th><img onclick="toggle('detective')" src="./static/image/detective.png"  alt="detective"><h6>5</h6></th> 
+            <th><img onclick="toggle('intelligance')" src="./static/image/intelligance.png"  alt="intelligance"><h6>5</h6></th>
+            <th><img onclick="toggle('fighter')" src="./static/image/fighter.png" alt="fighter"><h6>5</h6></th> 
+            <th><img onclick="toggle('police')" src="./static/image/police.png" alt="police"><h6>5</h6></th>
+            <th><img onclick="toggle('book')" src="./static/image/book.svg" alt="book"><h6>4</h6></th>
+            <th><img onclick="toggle('lady')" src="./static/image/lady.png" alt="lady"><h6>3</h6></th>
+            <th><img onclick="toggle('observant')" src="./static/image/observant.png" alt="observant"><h6>3</h6></th>
+            <th><img onclick="toggle('criminal')" src="./static/image/criminal.png" alt="criminal"><h6>3</h6></th>
           </tr>
         </thead>
         <tbody>
           <tr id="player1">
             <td><input id="player1name" type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><input class="detective" type="text"></td>
+            <td><input class="intelligance" type="text"></td>
+            <td><input class="fighter" type="text"></td>
+            <td><input class="police" type="text"></td>
+            <td><input class="book" type="text"></td>
+            <td><input class="lady" type="text"></td>
+            <td><input class="observant" type="text"></td>
+            <td><input class="criminal" type="text"></td>
           </tr>
           <tr id="player2">
             <td><input id="player2name" type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><input class="detective" type="text"></td>
+            <td><input class="intelligance" type="text"></td>
+            <td><input class="fighter" type="text"></td>
+            <td><input class="police" type="text"></td>
+            <td><input class="book" type="text"></td>
+            <td><input class="lady" type="text"></td>
+            <td><input class="observant" type="text"></td>
+            <td><input class="criminal" type="text"></td>
           </tr>
             <tr id="player3">
             <td><input id="player3name" type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><input class="detective" type="text"></td>
+            <td><input class="intelligance" type="text"></td>
+            <td><input class="fighter" type="text"></td>
+            <td><input class="police" type="text"></td>
+            <td><input class="book" type="text"></td>
+            <td><input class="lady" type="text"></td>
+            <td><input class="observant" type="text"></td>
+            <td><input class="criminal" type="text"></td>
           </tr>
             <tr id="player4">
             <td><input id="player4name" type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><input class="detective" type="text"></td>
+            <td><input class="intelligance" type="text"></td>
+            <td><input class="fighter" type="text"></td>
+            <td><input class="police" type="text"></td>
+            <td><input class="book" type="text"></td>
+            <td><input class="lady" type="text"></td>
+            <td><input class="observant" type="text"></td>
+            <td><input class="criminal" type="text"></td>
           </tr>
           
         </tbody>
@@ -109,8 +109,8 @@
         <div class="col s6" id="left-column">
         <div class="row" id="sebastain">
           <div class="col s5 iconbox">
-            <img src="./static/image/criminal.png" alt="criminal">
-            <img src="./static/image/fighter.png" alt="fighter">
+            <img src="./static/image/criminal.png" class="criminal" alt="criminal">
+            <img src="./static/image/fighter.png" class="fighter" alt="fighter">
           </div>
           <div class="col s5">
             <h6>Sebastian Moran</h6>
@@ -125,9 +125,9 @@
         
         <div class="row" id="irene">
           <div class="col s5 iconbox">
-            <img src="./static/image/criminal.png" alt="criminal">
-            <img src="./static/image/intelligance.png" alt="intelligance">
-            <img src="./static/image/lady.png" alt="lady">
+            <img src="./static/image/criminal.png" class="criminal" alt="criminal">
+            <img src="./static/image/intelligance.png" class="intelligance" alt="intelligance">
+            <img src="./static/image/lady.png" class="lady" alt="lady">
           </div>
           <div class="col s5">
             <h6>Irene Adler</h6>
@@ -142,9 +142,9 @@
 
         <div class="row" id="lestrade">
           <div class="col s5 iconbox">
-            <img src="./static/image/police.png" alt="police">
-            <img src="./static/image/observant.png" alt="observant">
-            <img src="./static/image/book.svg" alt="book">
+            <img src="./static/image/police.png" class="police" alt="police">
+            <img src="./static/image/observant.png" class="observant" alt="observant">
+            <img src="./static/image/book.svg" class="book" alt="book">
           </div>
           <div class="col s5">
             <h6>Inspector G. Lestrade</h6>
@@ -159,9 +159,9 @@
 
         <div class="row" id="gregson">
           <div class="col s5 iconbox">
-            <img src="./static/image/police.png" alt="police">
-            <img src="./static/image/fighter.png" alt="fighter">
-            <img src="./static/image/book.svg" alt="book">
+            <img src="./static/image/police.png" class="police" alt="police">
+            <img src="./static/image/fighter.png" class="fighter" alt="fighter">
+            <img src="./static/image/book.svg" class="book" alt="book">
           </div>
           <div class="col s5">
             <h6>Inspector Gregson</h6>
@@ -176,8 +176,8 @@
 
           <div class="row" id="Baynes">
           <div class="col s5 iconbox">
-            <img src="./static/image/police.png" alt="police">
-            <img src="./static/image/intelligance.png" alt="intelligance">
+            <img src="./static/image/police.png" class="police" alt="police">
+            <img src="./static/image/intelligance.png" class="intelligance" alt="intelligance">
           </div>
           <div class="col s5">
             <h6>Inspector Baynes</h6>
@@ -192,8 +192,8 @@
 
         <div class="row" id="bradstreet">
           <div class="col s5 iconbox">
-            <img src="./static/image/police.png" alt="police">
-            <img src="./static/image/fighter.png" alt="fighter">
+            <img src="./static/image/police.png" class="police" alt="police">
+            <img src="./static/image/fighter.png" class="fighter" alt="fighter">
           </div>
           <div class="col s5">
             <h6>Inspector Bradstreet</h6>
@@ -208,9 +208,9 @@
 
         <div class="row" id="hopkins">
           <div class="col s5 iconbox">
-            <img src="./static/image/police.png" alt="police">
-            <img src="./static/image/detective.png" alt="detective">
-            <img src="./static/image/observant.png" alt="observant">
+            <img src="./static/image/police.png" class="police" alt="police">
+            <img src="./static/image/detective.png" class="detective" alt="detective">
+            <img src="./static/image/observant.png" class="observant" alt="observant">
           </div>
           <div class="col s5">
             <h6>Inspector Hopkins</h6>
@@ -230,9 +230,9 @@
       
           <div class="row" id="sherlock">
             <div class="col s5 iconbox">
-              <img src="./static/image/detective.png" alt="detective">
-              <img src="./static/image/intelligance.png" alt="intelligance">
-              <img src="./static/image/fighter.png" alt="fighter">
+              <img src="./static/image/detective.png" class="detective" alt="detective">
+              <img src="./static/image/intelligance.png" class="intelligance" alt="intelligance">
+              <img src="./static/image/fighter.png" class="fighter" alt="fighter">
             </div>
             <div class="col s5">
               <h6>Sherlock Holmes</h6>
@@ -247,9 +247,9 @@
         
           <div class="row" id="watson">
             <div class="col s5 iconbox">
-              <img src="./static/image/detective.png" alt="detective">
-              <img src="./static/image/observant.png" alt="observant">
-              <img src="./static/image/fighter.png" alt="fighter">
+              <img src="./static/image/detective.png" class="detective" alt="detective">
+              <img src="./static/image/observant.png" class="observant" alt="observant">
+              <img src="./static/image/fighter.png" class="fighter" alt="fighter">
             </div>
             <div class="col s5">
               <h6>John Watson</h6>
@@ -264,9 +264,9 @@
 
           <div class="row" id="mycroft">
             <div class="col s5 iconbox">
-              <img src="./static/image/detective.png" alt="detective">
-              <img src="./static/image/intelligance.png" alt="intelligance">
-              <img src="./static/image/book.svg" alt="book">
+              <img src="./static/image/detective.png" class="detective" alt="detective">
+              <img src="./static/image/intelligance.png" class="intelligance" alt="intelligance">
+              <img src="./static/image/book.svg" class="book" alt="book">
             </div>
             <div class="col s5">
               <h6>Mycroft Holmes</h6>
@@ -281,8 +281,8 @@
 
           <div class="row" id="hudson">
             <div class="col s5 iconbox">
-              <img src="./static/image/detective.png" alt="detective">
-              <img src="./static/image/lady.png" alt="lady">
+              <img src="./static/image/detective.png" class="detective" alt="detective">
+              <img src="./static/image/lady.png" class="lady" alt="lady">
             </div>
             <div class="col s5">
               <h6>Mrs. Hudson</h6>
@@ -297,8 +297,8 @@
 
           <div class="row" id="mary">
             <div class="col s5 iconbox">
-              <img src="./static/image/book.svg" alt="book">
-              <img src="./static/image/lady.png" alt="lady">
+              <img src="./static/image/book.svg" class="book" alt="book">
+              <img src="./static/image/lady.png" class="lady" alt="lady">
             </div>
             <div class="col s5">
               <h6>Mary Morstan</h6>
@@ -313,8 +313,8 @@
 
           <div class="row" id="moriarty">
             <div class="col s5 iconbox">
-              <img src="./static/image/criminal.png" alt="criminal">
-              <img src="./static/image/intelligance.png" alt="intelligance">
+              <img src="./static/image/criminal.png" class="criminal" alt="criminal">
+              <img src="./static/image/intelligance.png" class="intelligance" alt="intelligance">
             </div>
             <div class="col s5">
               <h6>James Moriarty</h6>
