@@ -10,7 +10,9 @@ function reset(){
 	for (var i=0;i<keywords.length;i++){
 		$('.'+keywords[i]).css('background-color','transparent');
 		$('img.'+keywords[i]).parent().parent().css('background-color','transparent');
+	}
 }
+
 function nextRound(){
 	p1 = $('input#player1name').val();
 	p2 = $('input#player2name').val();
@@ -22,10 +24,10 @@ function nextRound(){
 	$('input#player3name').val(p3);
 	$('input#player4name').val(p4);
 	
-	}
-
-
 }
+
+
+
 
 function toggle(keyword){
 	if ($('.'+keyword).css('background-color') =='rgba(80, 130, 80, 0.5)'){
