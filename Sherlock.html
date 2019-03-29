@@ -22,22 +22,26 @@
     <meta name="msapplication-TileImage" content="./static/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   <!--end of favicon-->
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="./static/css/Sherlock.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+
+  <link rel="stylesheet" href="./static/css/Sherlock.css">
   <script src="./static/js/Sherlock.js"></script>
   
 
-    <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
             
 </head>
 <body>
   <div class="container" id="scoringsheet" style="width:100%">
     <div class="row">
-      <h3>Sherlock 13</h3>
+      <h3 class="left">Sherlock 13</h3>
+      <a href="#" class="right" onclick="$('#modal3').modal('open');"><i class="material-icons">info</i><span>Help</span></a>
     </div>
     <form action="" id="playsheet">
     <table class="centered striped" id="gametable" style="width:100%">
@@ -252,7 +256,7 @@
               <img src="./static/image/fighter.png" class="fighter" alt="fighter">
             </div>
             <div class="col s5">
-              <h6>John Watson</h6>
+              <h6>John H. Watson</h6>
             </div>
             <div class="col s2">
               <label>
@@ -330,7 +334,7 @@
           <div class="container" id="thankyou">
             <a class="waves-effect waves-light btn view grey darken-2" onclick="$('#modal1').modal('open');">Reset Sheet</a>
             <a class="waves-effect waves-light btn view grey darken-2" onclick="$('#modal2').modal('open');">Next Round</a>
-       
+            <a href="#" class="black-text right" onclick="$('#musicmodal').modal('open');">music anyone?</a>
 
           </div>
 
@@ -361,5 +365,42 @@
               <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Close</a>
             </div>
           </div>
+
+        <div id="modal3" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>How to play</h4>
+            <p>In Sherlock 13, first published as Holmes 13, the players take the role of a detective, trying to unmask the famous thief Arsene Lupin, who is among them in disguise.</p>
+            <p>The game consists of 13 character cards, with 2 to 3 characteristics each. Each characteristic is shared by 3 to 5 characters. The cards are shuffled and one is drawn and put aside. This card represents the disguise chosen by Arsene Lupin. The other cards are distributed evenly among the players. The players now tally the total of characteristics they have on their cards (e.g. 2 detectives, 1 female, 0 genius etc) and note them for later use.</p>
+              
+            <p>Players now take turns, asking a question to gather new evidence:</p>
+
+            <p>a.) To <b>all players</b>: "Who has (at least one) of (this characteristic)?</p>
+
+            <p><b>OR</b></p>
+
+            <p>b.) To <b>one player</b>: "How many of (this characteristic) do you have?</p>
+            
+            <p>Using these clues the players try to figure out which disguise Arsene has chosen (i.e. which card is missing).</p>
+            <p>
+              Instead of a question, a player may announce which character he suspects to be Arsene in disguise. That player then secretly checks the hidden card. If the suspicion was correct, this player wins the game, otherwise the player is eliminated and the other players continue.
+            </p>
+            <hr>
+            <h4>How to use this sheet</h4>
+            <p>This sheet is a digital version of the original marking sheet.</p>
+            <p>Use the <i><b>Player</b></i> column to  </p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+            </div>
+          </div>
+
+        <div id="musicmodal" class="modal">
+          <div class="modal-content">
+            <iframe width="100%" height="100" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/113469906&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+          </div>
+          <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-black btn-flat">Close</a>
+            </div>
+        </div>
 </body>
 </html>
