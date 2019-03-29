@@ -1,20 +1,30 @@
 var p1 , p2 ,p3 ,p4
-
+var keywords = ['detective','intelligance','fighter','police','book','lady','observant','criminal']
 
 $(document).ready(function(){
     $('.modal').modal();
   });
-
-function NextRound(){
+function reset(){
+	$('#playsheet').trigger('reset'); 
+	$('img').css('background-color','transparent');
+	for (var i=0;i<keywords.length;i++){
+		$('.'+keywords[i]).css('background-color','transparent');
+		$('img.'+keywords[i]).parent().parent().css('background-color','transparent');
+}
+function nextRound(){
 	p1 = $('input#player1name').val();
 	p2 = $('input#player2name').val();
 	p3 = $('input#player3name').val();
 	p4 = $('input#player4name').val();
-	$('#playsheet').trigger('reset'); 
+	reset(); 
 	$('input#player1name').val(p1);
 	$('input#player2name').val(p2);
 	$('input#player3name').val(p3);
 	$('input#player4name').val(p4);
+	
+	}
+
+
 }
 
 function toggle(keyword){
